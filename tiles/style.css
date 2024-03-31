@@ -1,0 +1,84 @@
+
+body{
+	font-family: "Varela Round", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color:#003286;
+	margin: 0;
+   	padding:0;}
+
+.outer{
+  	text-align: center;
+	background-color:#003286;
+	padding:0;}
+
+.page{
+	color:white;
+	position: relative;
+	font-size: 40px;
+	text-align:left;
+	padding:20px;
+	position:relative;}
+
+.topofpage{
+	display:flex;
+	flex-direction: row;
+	flex-wrap:nowrap; 
+	background-color:white;
+	align-items:center;
+	padding-left: 10px;
+	padding-right: 10px;
+	max-height: 100px;
+	min-height:70px;
+	position: sticky;
+	position: -webkit-sticky; /* Safari */
+	top: 0;
+	z-index: 100;}
+	
+.logo{
+	max-width: 200px;
+	align-content: flex-end;
+	min-width:100px;}
+
+.logo_img{
+	width:35%;
+	vertical-align: middle;}
+
+.nav{
+	flex-grow: 1;
+	margin-left:400px;}
+
+
+	a
+	{color:#003286;
+  	font-size:16px;
+  	font-weight: bold; 
+  	text-decoration: none;
+	margin-right:20px;}
+
+.search {align-content: flex-end;
+		min-width:400px;}
+
+.search_img{
+	width:50%;
+	vertical-align: middle;
+	float: right;}
+  
+.tile{
+	position: relative;
+	height: 300px;
+	background-size:cover;
+	background-repeat: no-repeat;}
+
+.img1{
+	background-image:url("img/uncooked.png");}
+
+.img2{
+	background-image:url("img/cooked.png");}
+
+.img3{
+	background-image:url("img/boxes.png");}
+
+.img4{
+	background-image:url("img/smile.png");}
+	  
