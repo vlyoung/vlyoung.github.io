@@ -1,0 +1,91 @@
+body{
+	font-family: "Varela Round", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	background-color:#003286;
+	margin: 0;
+   	padding:0;}
+
+.outer{
+  	text-align: center;
+	background-color:#003286;
+	padding:0;}
+
+.page{
+	color:white;
+	position: relative;
+	font-size: 40px;
+	text-align:left;
+	padding:20px;}
+
+.topofpage{
+	display:flex;
+	flex-direction: row;
+	flex-wrap:nowrap; 
+	background-color:white;
+	align-items:center;
+	padding-left: 10px;
+	padding-right: 10px;
+	height:70px;
+	position: sticky;
+	position: -webkit-sticky; /* Safari */
+	top: 0;
+	z-index: 100;}
+	
+.logo{max-width:50px;}
+
+.logo_img{
+	width:100%;
+	vertical-align: middle;}
+
+.desktopmenu{flex-grow: 1;}
+	
+	a
+	{color:#003286;
+  	font-size:16px;
+  	font-weight: bold; 
+  	text-decoration: none;
+	margin-right:20px;}
+
+.search {width:275px;}
+
+.search_img{
+	width:100%;
+	vertical-align: middle;}
+
+#mobilemenu {
+	display:none;
+	margin-left: auto;}
+
+#mobilemenu img{
+	width:40px;
+	padding:10px;
+	cursor: pointer;}
+
+#mobilemenuoverlay{
+		position:absolute;
+		top:0;
+		right:0;
+		background-color:#003286;
+		color:white;
+		width:100vw;
+		height:100vh;
+		display:none;
+		text-align: left;}
+
+.mobilemenuitems{
+	padding:30px;
+	font-size:20px;
+	font-weight: 800}
+
+#close{
+	font-size:45px;
+	position:absolute;
+	right:20px;
+	top:10px;
+	cursor: pointer;}
+
+@media screen and (max-width:768px)
+	{#mobilemenu{display:inline-block;}
+	.desktopmenu{display:none;}
+	.search{display:none;}}
