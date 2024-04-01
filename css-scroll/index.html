@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<title>scroll</title>
+<style>
+ .page_content_stretch {
+   border: 1px solid red;
+   height: 3000px;
+	 background-color:darkblue;
+ }
+ .scale_me {
+   position: fixed;
+   color:pink;
+   top: 50%;
+   left: 50%;
+   transform-origin: center center;
+   transform: translate(-50%, -50%) scale(1, 1);
+ }
+</style>
+</head>
+<body>
+
+<div class="scale_me" id="scaleme"><img src="img/spiral.png" alt="spiral"/></div>
+<div class="page_content_stretch">Page content made to stretch so there is a scrollbar</div>
+
+<!--JavaScript to Handle what happens as the page is scrolled. -->
+<script>
+/* ASSIGN A FUNCTION TO THE PAGE AS IT SCROLLS */
+document.body.onscroll = function(event) {
+    var scrollposition = window.pageYOffset;
+    var scalesize = 1 + scrollposition * 0.01;
+    document.getElementById("scaleme").style.transform = "translate(-50%, -50%) scale(" + scalesize + ")";
+};
+</script>
+</body>
+</html>
